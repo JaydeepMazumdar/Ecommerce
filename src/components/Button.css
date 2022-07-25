@@ -1,0 +1,34 @@
+:root {
+  --btn-colour: #1888ff;
+}
+
+.butn {
+  /* padding: 0 10px; */
+  margin: 0;
+  padding: 0;
+  /* height: 5rem; */
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  background : transparent;
+  transition: all 0.5s ease;
+}
+
+.butn i{
+  margin: 0;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+
+.butn .title{
+  margin: 0;
+  margin-top: -1.3rem;
+  padding: 0;
+
+}
+

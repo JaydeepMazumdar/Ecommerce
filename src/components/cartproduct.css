@@ -1,0 +1,181 @@
+#section {
+  margin-top: 0.5rem;
+}
+
+.card {
+  padding: 0.5rem;
+}
+
+.number {
+  padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+  color: white;
+  font-size: 1rem;
+  background-color: blueviolet;
+  font-weight: 900;
+  border-radius: 0.2rem;
+}
+.image {
+  height: auto;
+  width: 3rem;
+}
+.quantity {
+  display: flex;
+}
+.quantity_1 {
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
+}
+.price {
+  cursor: pointer;
+  color: grey !important;
+  margin-right: 0.5rem !important;
+  margin-top: 0.8rem !important;
+}
+.image_cart {
+  height: 8rem;
+  width: 10rem;
+  overflow: hidden;
+}
+
+.image_cart img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.heading {
+  font-size: 1rem;
+}
+
+.instock {
+  color: green;
+  font-size: 0.8rem;
+}
+
+.outofstock {
+  color: rgb(209, 49, 5);
+  font-size: 0.8rem;
+}
+
+.eligible {
+  color: grey;
+  font-size: 0.9rem;
+}
+
+.normal {
+  font-size: 0.9rem;
+  color: red;
+}
+
+.plus {
+  font-size: 0.95rem;
+  color: green;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+.subtotal {
+  color: grey;
+  font-size: 0.9rem;
+}
+
+.none {
+  display: none;
+}
+
+.card_main {
+  margin: 1rem 0 1rem 0;
+  box-shadow: 3px 7px 25px 0px rgba(168, 165, 168, 0.73);
+}
+
+.button1 {
+  display: flex;
+  margin-top: 0.6rem;
+  margin-left: 41rem;
+}
+
+.button1 button {
+  border: none;
+  height: 2.5rem;
+  color: rgb(15, 14, 14);
+  font-weight: 500;
+}
+
+.buy1 {
+  border-bottom-left-radius: 0.4rem;
+  border-top-left-radius: 0.4rem;
+  padding: 0.5rem 0.5rem;
+  background-color: rgb(133, 227, 133, 0.5);
+}
+.remove1 {
+  border-bottom-right-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+  padding: 0 0.5rem 0 0.5rem;
+
+  background-color: rgba(224, 83, 116, 0.5);
+}
+
+.buy1:hover {
+  background-color: rgb(133, 227, 133, 0.8);
+}
+
+.remove1:hover {
+  background-color: rgba(224, 83, 116, 0.8);
+}
+
+h4 {
+  font-weight: 900 !important;
+}
+
+.totalprice {
+  background-color: white;
+}
+
+.footer-button button {
+  border: none;
+}
+
+.design {
+  display: flex;
+}
+.prices {
+  padding: 1rem 0 0 2.5rem;
+}
+.price-tag {
+  margin: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.buttn {
+  padding: 0.5rem 1rem;
+  color: black;
+  margin-left: 1rem;
+  border-radius: 5px;
+}
+
+.t-Price {
+  position: fixed;
+  right: 1rem;
+  top: 11rem;
+  box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.2);
+  height: 17.8rem;
+}
+
+.buy1 a {
+  text-decoration: none;
+  color: black;
+}
+
+#empty {
+  display: none;
+  padding: 10rem 0 0 24rem;
+}
+
+.quantity_2 {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
+}

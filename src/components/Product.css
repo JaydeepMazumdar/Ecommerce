@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 98vw;
+  margin-top: 3.5rem;
+  position: absolute;
+  display: block;
+  z-index: 2;
+  /* background: url(../../public/image/product_bg.jfif); */
+}
+
+.PDisplay {
+  background: url(../../public/image/product_bg.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product_area {
+  width: 95%;
+  margin: auto;
+  margin-top: 3%;
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  /* background: url(../../public/image/product_bg.jfif); */
+}
+
+.cards {
+  width: 100%;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 5px;
+  /* background: rgb(255, 255, 255); */
+  background: linear-gradient(
+    180deg,
+    rgba(244, 175, 246, 1) 32%,
+    rgba(252, 250, 252, 1) 70%,
+    rgba(252, 252, 252, 1) 92%
+  );
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.2);
+  transition: all 1s ease;
+  cursor: default;
+  position: relative;
+}
+
+.cards:hover {
+  box-shadow: inset 0px 0px 5px 5px rgba(52, 0, 0, 0.2);
+  /* background: rgba(249, 50, 50, 0.721); */
+  background: rgba(192, 74, 106, 0.721);
+}
+
+.cards:hover .details p:nth-child(1) {
+  color: aliceblue;
+  border-top: 1px solid rgba(225, 224, 224, 0.477);
+}
+.cards:hover .details p:nth-child(2) {
+  color: black;
+  font-weight: 700;
+}
+.cards:hover .details p:nth-child(3) {
+  color: aliceblue;
+}
+
+.cards:hover img {
+  transition: all 0.3s ease;
+  transform: scale(1.2);
+}
+
+.img_box {
+  width: 90%;
+  height: 45%;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 2px solid white;
+}
+
+.img_box img {
+  width: 100%;
+  height: auto;
+  margin-top: -20%;
+}
+
+.details p:nth-child(1) {
+  padding-top: 10px;
+  border-top: 1px solid rgba(98, 98, 98, 0.477);
+  font-weight: Bold;
+}
+
+.details p:nth-child(2) {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.details p:nth-child(3) {
+  font-weight: bold;
+  font-size: 0.8rem;
+  /* color: white; */
+  margin-bottom: 4rem;
+}
+
+.buy {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(117, 50%, 60%);
+  color: white;
+  font-size: 1rem;
+  padding: 5px 10px;
+  margin: 3px;
+}
+
+.buy:hover {
+  color: white;
+  box-shadow: inset 0px 0px 12px 5px rgba(52, 0, 0, 0.2);
+  /* background: green; */
+  background-color: hsl(242, 38%, 73%);
+  /* border: 1.5px solid hsl(50, 97%, 50%); */
+}
+
+.cart {
+  cursor: pointer;
+  border-radius: 5px;
+  /* border: 1px solid #777; */
+  border: 1.5px solid hsl(250, 58%, 65%);
+  color: hsl(250, 58%, 65%);
+  background-color: white;
+  font-size: 1rem;
+  padding: 4px 10px;
+}
+
+.cart:hover {
+  background-color: hsl(344, 51%, 54%);
+  color: white;
+  /* font-weight: 700; */
+  border: 1.5px solid hsl(50, 97%, 50%);
+  /* border: none; */
+}
+
+.buttons {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}

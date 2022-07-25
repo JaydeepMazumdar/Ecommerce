@@ -1,0 +1,153 @@
+/* *{
+    overflow-x: hidden;
+} */
+
+.choice{
+    margin-top: 170rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    display: flex;
+    width: 98.7vw;
+    height: 50rem;
+    z-index: -1;
+
+}
+
+.men, .women{
+    position: relative;
+    /* margin-bottom: 500rem; */
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(0, 0, 0, 0.6); */
+}
+.men img, .women img{
+    z-index: -2;
+    width: 100%;
+    height: auto;
+    opacity: 0.95;
+}
+
+.choice h3{
+    position: absolute;
+    margin-top: -2.5rem;
+    font-size: 2rem;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 100;
+    color: white;
+    
+}
+
+.choice button{
+    position: absolute;
+    margin-top: 5rem;
+    width: 8rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Source Sans Pro", sans-serif;
+    background: rgba(128, 128, 128, 0.8);
+    border-radius: 3px;
+    font-size: 0.9rem;
+    border: none;
+    color: black;
+    font-weight: 750;
+    z-index: 1;
+}
+
+.ShopBtn::after{
+    content: "";
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid transparent;
+    z-index: -2;
+    transition: top,right,bottom,left, 0.3s ease;
+}
+
+.ShopBtn::before {
+    content: "";
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid grey;
+    z-index: -2;
+    transition: top,right,bottom,left, 0.3s ease;
+}
+
+.ShopBtn:hover::before, .ShopBtn:focus::before {
+    visibility: visible;
+    top : -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+    border-radius: 5px;
+}
+.ShopBtn:hover::after, .ShopBtn:focus::after {
+    visibility: visible;
+    top : -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    border-radius: 5px;
+}
+
+
+.women{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("../../public/image/women.jpg") no-repeat fixed 100%;
+    background-position: top right;
+}
+
+.men{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("../../public/image/men.jpg") no-repeat fixed ;
+    
+}
+
+.content_box{
+    display: flex;
+    width: 100%;
+    padding: 3rem;
+    flex-direction: column;
+    position: relative;
+    /* background-color: bisque; */
+}
+
+.content_box .text{
+    position: absolute;
+    width: 40%;
+    padding: 10px;
+    padding-left: 30px;
+    background: white;
+}
+
+.content_box .image{
+    margin-left: 32%;
+    width: 28rem;
+    overflow: hidden;
+}
+
+.image img{
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.text2{
+    top: 12rem;
+    right: 0;
+}
+
+.text1{
+    top: 30rem;
+    left: 20px;
+}

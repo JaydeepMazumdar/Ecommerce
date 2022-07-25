@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Portal</title>
+    <script
+      src="https://kit.fontawesome.com/fdc9be1628.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style_payment.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="flexbox" id="flexbox">
+        <div class="circle1" id="circle1"></div>
+        <div class="box1" id="box1"></div>
+        <div class="circle2" id="circle2"></div>
+        <div class="box2" id="box2"></div>
+        <div class="circle3" id="cicrle3"></div>
+      </div>
+      <div class="first" id="first">
+        <div class="col-1">
+          <div class="heading"><h3>BILLING ADRESS</h3></div>
+          <div class="error" id="error">Error</div>
+          <div class="name">
+            <p>Full Name:</p>
+            <input
+              type="text"
+              placeholder="Chloe Jonas"
+              id="name"
+              onkeyup="isEmpty()"
+            />
+          </div>
+          <div class="Email">
+            <p>Email:</p>
+            <input
+              type="email"
+              placeholder="abc@xyz.com"
+              id="email"
+              onkeyup="isEmpty()"
+            />
+          </div>
+          <div class="Adress">
+            <p>Adress:</p>
+            <input
+              type="text"
+              placeholder="13th Avenue"
+              id="adress"
+              onkeyup="isEmpty()"
+            />
+          </div>
+          <div class="City">
+            <p>City:</p>
+            <input
+              type="text"
+              placeholder="New York"
+              id="city"
+              onkeyup="isEmpty()"
+            />
+          </div>
+          <div class="Pincode">
+            <p>Pincode:</p>
+            <input
+              type="number"
+              placeholder="12345"
+              id="pincode"
+              onkeyup="isEmpty()"
+            />
+          </div>
+        </div>
+        <!-- <input type="submit" value="Next" class="button1"> -->
+        <div class="button">
+          <button class="button1" id="button1">Next</button>
+        </div>
+      </div>
+
+      <div class="second" id="second">
+        <div class="col-2">
+          <div class="heading"><h3>PAYMENT DETAILS</h3></div>
+          <div class="error1" id="error1">Error</div>
+          <div class="Accepted Cards">
+            <p>Accepted Cards:</p>
+            <img src="./image/card_img.png" alt="" />
+          </div>
+          <div class="Name On Card">
+            <p>Name On Card:</p>
+            <input
+              type="text"
+              placeholder="Chloe Jonas"
+              id="cardname"
+              onkeyup="isEmpty1()"
+            />
+          </div>
+          <div class="Credit Card Number">
+            <p>Credit Card Number:</p>
+            <input
+              type="number"
+              placeholder="1111-2222-3333-4444 "
+              id="cardno"
+              onkeyup="isEmpty1()"
+            />
+          </div>
+          <div class="Expdate">
+            <p>Exp-Date:</p>
+            <input
+              type="date"
+              placeholder="1/1/2022"
+              id="expdate"
+              onkeyup="isEmpty1()"
+            />
+          </div>
+          <div class="CVV">
+            <p>CVV:</p>
+            <input
+              type="number"
+              placeholder="123"
+              id="cvv"
+              onkeyup="isEmpty1()"
+            />
+          </div>
+          <!-- <div class="remeberme">
+        <input type="checkbox" name="Remember My Card" id="/">Remember my Cards
+      </div> -->
+        </div>
+        <div class="button">
+          <button class="button2" id="button2">Next</button>
+        </div>
+      </div>
+      <div id="success" class="success">
+        <h1>success</h1>
+        <i class="fa-solid fa-check happy"></i>
+      </div>
+      <div class="back">
+        <button class="btn" id="btn">
+          <a href="http://localhost:3000/" class="a">Go Back</a>
+        </button>
+      </div>
+      <div id="fail" class="fail">
+        <h1>Sorry Transaction Failed !!!....</h1>
+        <i class="fa-solid fa-face-frown sad"></i>
+      </div>
+    </div>
+
+    <script src="payment.js"></script>
+  </body>
+</html>

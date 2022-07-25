@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --radius : 20px;
+}
+
+section{
+    width: 98vw;
+    position: absolute;
+    display: block;
+    z-index: -1;
+    padding: 0.5rem;
+}
+
+section h1{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-weight: 600;
+}
+
+.P_box{
+    width: 98%;
+    margin: auto;
+    margin: 3%;
+    margin-top: -0.1rem;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 10px ;
+    grid-row-gap: 10px ;
+    border-radius: var(--radius);
+    
+}
+
+.Product_box{
+    width : 95%;
+    height : auto;
+    display: block;
+    margin: 10px;
+    border-radius: var(--radius);
+    box-shadow: 10px 10px 30px -14px rgba(0,0,0,0.75);
+    background: transparent;
+    overflow: hidden;
+    position: relative ;
+    cursor: pointer;
+}
+
+.image_box{
+    width: 100%;
+    border-radius: var(--radius);
+    display: flex;
+    float: left;
+    overflow: hidden;
+    /* background-color: transparent; */
+    /* z-index: 1; */
+}
+
+.image_box:hover .content{
+    transform: translate(0%);
+}
+
+.image_box img{
+    width: 100%;
+    /* padding: 5px; */
+    display: block;
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+    /* z-index: 1; */
+    
+}
+
+.image_box img:nth-child(1){
+    clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+}
+.image_box img:nth-child(2){
+    margin-left: -12%;
+    clip-path: polygon(0 0, 70% 0, 100% 100%, 30% 100%);
+}
+.image_box img:nth-child(3){
+    margin-left: -12%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+}
+
+.content{
+    background: rgba(13, 13, 13, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    border: grey 1px solid ;
+    bottom: 0;
+    right: 0;
+    transform: translate(100%);
+    transition: all 0.3s ease;
+}
+
+.content p:nth-child(1){
+    font-size: 2rem;
+    color: white;
+    margin: 15px 20px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.content p:nth-child(2){
+    font-size: 1.5rem;
+    color: rgb(165, 162, 162);
+    margin: 15px 25px;
+    margin-top: 8px;
+} 
+
+.content .buttn{
+    padding: 10px 15px;
+    border: none;
+    margin-left: 1.5rem;
+    margin-top: 1.3rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.content .buttn:hover{
+    background-color: rgb(252, 218, 155);
+    color: black;
+    transform: scale(1.05);
+    box-shadow: inset 10px 10px 42px -8px rgba(0,0,0,0.75);
+}
