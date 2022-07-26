@@ -2,7 +2,7 @@ import React from "react";
 import { Product_List } from "./MenuItems";
 // import Apifetch from '../Apifetch';
 import Boxes from "./Product_Box";
-import "./ProductBox.css";
+import "./styles/ProductBox.css";
 
 export default function Product(props) {
   return (

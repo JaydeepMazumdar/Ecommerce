@@ -1,5 +1,5 @@
 import React from "react";
-import "./Content.css";
+import "./styles/Content.css";
 import { product } from "./ProductItems";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles

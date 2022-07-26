@@ -103,13 +103,13 @@
 
 .women{
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
-    url("../../public/image/women.jpg") no-repeat fixed 100%;
+    url("../../../public/image/women.jpg") no-repeat fixed 100%;
     background-position: top right;
 }
 
 .men{
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
-    url("../../public/image/men.jpg") no-repeat fixed ;
+    url("../../../public/image/men.jpg") no-repeat fixed ;
     
 }
 

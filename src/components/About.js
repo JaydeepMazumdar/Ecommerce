@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "./styles/About.css";
 
 export default function About(props) {
   return (
@@ -28,7 +28,7 @@ export default function About(props) {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/iMP6QUOlRBc?autoplay=1&playlist=iMP6QUOlRBc&loop=1"
+                src="https://www.youtube.com/embed/iMP6QUOlRBc?autoplay=1&loop=1"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

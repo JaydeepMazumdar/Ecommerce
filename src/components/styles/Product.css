@@ -14,7 +14,7 @@ section {
 }
 
 .PDisplay {
-  background: url(../../public/image/product_bg.jfif);
+  background: url(../../../public/image/product_bg.jfif);
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { product } from "./ProductItems";
 import Cards from "./ProductCard";
-import "./Product.css";
+import "./styles/Product.css";
 
 export default function Product(props) {
   // console.log(props.type);

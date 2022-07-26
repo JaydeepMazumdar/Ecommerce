@@ -1,5 +1,5 @@
 import React from "react";
-import "./cartproduct.css";
+import "./styles/cartproduct.css";
 export default function OrderProduct(props) {
   return (
     <div className="col-lg-9">

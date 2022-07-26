@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./cartproduct.css";
+import "./styles/cartproduct.css";
 import CartProduct from "./CartProduct";
 const Cart = ({ cart, setcount, setCart, handleChange, handleOrder }) => {
   let q = 0;

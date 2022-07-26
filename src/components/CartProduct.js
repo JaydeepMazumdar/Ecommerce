@@ -1,5 +1,5 @@
 import React from "react";
-import "./cartproduct.css";
+import "./styles/cartproduct.css";
 export default function CartProduct(props) {
   let t = 0;
   return (

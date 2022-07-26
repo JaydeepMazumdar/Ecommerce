@@ -3,7 +3,7 @@ import { Button } from "./Button";
 import { Search } from "./Search";
 import Login from "../login";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./styles/Navbar.css";
 import { Dropdown, Help } from "./Dropdown";
 
 function Navbar(props) {
@@ -109,11 +109,7 @@ function Navbar(props) {
               </Link>
             </li>
             <li className="nav_items colbar" onClick={props.display}>
-              <Link
-                to="./About"
-                className="nav_links"
-                onClick={props.about}
-              >
+              <Link to="./About" className="nav_links" onClick={props.about}>
                 About Us
               </Link>
             </li>
