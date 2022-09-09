@@ -31,18 +31,18 @@ function App() {
   const handleClick = (item) => {
     let flag = 0;
     cart.map((prod) => {
-      if (prod.id == item.id) {
+      if (prod.id === item.id) {
         flag = 1;
       }
     });
-    if (flag == 0) {
+    if (flag === 0) {
       setCart([...cart, item]);
       sessionStorage.setItem("cart",JSON.stringify(cart));
       setCount(cart.length + 1);
       sessionStorage.setItem("count",count);
       console.log(JSON.parse(sessionStorage.getItem("cart")));
     }
-    if (flag == 1) {
+    if (flag === 1) {
       alert("This item is already added");
     }
   };
